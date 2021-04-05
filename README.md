@@ -1,5 +1,5 @@
 # cs111
-## My projects for CS 111 at UCLA taken Winter 2021 with Professor Xu
+## My projects for CS 111 (Operating Systems) at UCLA taken Winter 2021 with Professor Xu
 ## Scores:
 Lab 0: 97/100  
 Lab 1A: 100/100  
