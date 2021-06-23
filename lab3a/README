@@ -1,0 +1,13 @@
+NAME: Bryan Luo
+EMAIL: luobryan@ucla.edu
+ID: 605303956
+
+lab3a.c is the main source file for this project.
+
+ext2_fs.h is the header file, needed for functions and variables relating to 
+ext2_fs.
+
+README is this file.
+
+Makefile is used to build the program and/or make the tarball. 
+It can also be used to remove all files created by the Makefile. 

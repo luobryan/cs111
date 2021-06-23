@@ -1,0 +1,8 @@
+NAME: Bryan Luo
+EMAIL: luobryan@ucla.edu
+ID: 605303956
+
+Description of files:
+lab1a.c is the source code file.
+Makefile is the file used to build the program and make the tarball. It can also clean up (i.e. remove) any files that were made by the Makefile itself.
+README is this document.

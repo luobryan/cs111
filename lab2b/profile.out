@@ -1,0 +1,266 @@
+Total: 1176 samples
+     917  78.0%  78.0%     1176 100.0% thread_worker
+      41   3.5%  81.5%      161  13.7% SortedList_lookup
+      31   2.6%  84.1%       96   8.2% SortedList_insert
+      26   2.2%  86.3%       26   2.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1734
+      11   0.9%  87.2%       11   0.9% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1734
+       7   0.6%  87.8%        7   0.6% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:212
+       7   0.6%  88.4%        7   0.6% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:226
+       7   0.6%  89.0%        7   0.6% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:239
+       6   0.5%  89.5%        6   0.5% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:203
+       6   0.5%  90.1%        6   0.5% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:211
+       5   0.4%  90.5%        5   0.4% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:204
+       5   0.4%  90.9%        5   0.4% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:225
+       5   0.4%  91.3%        5   0.4% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1733
+       5   0.4%  91.8%        5   0.4% _init
+       4   0.3%  92.1%        4   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:161
+       4   0.3%  92.4%        4   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:239
+       4   0.3%  92.8%        4   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:240
+       4   0.3%  93.1%        4   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:253
+       4   0.3%  93.5%        4   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1235
+       4   0.3%  93.8%        4   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1324
+       4   0.3%  94.1%        4   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1734
+       3   0.3%  94.4%        3   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:165
+       3   0.3%  94.6%        3   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:238
+       3   0.3%  94.9%        3   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1058
+       3   0.3%  95.2%        3   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1593
+       3   0.3%  95.4%        3   0.3% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1734
+       2   0.2%  95.6%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:206
+       2   0.2%  95.7%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:229
+       2   0.2%  95.9%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:235
+       2   0.2%  96.1%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:263
+       2   0.2%  96.3%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:524
+       2   0.2%  96.4%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:610
+       2   0.2%  96.6%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:967
+       2   0.2%  96.8%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1148
+       2   0.2%  96.9%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1503
+       2   0.2%  97.1%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1505
+       2   0.2%  97.3%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1595
+       2   0.2%  97.4%        2   0.2% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1709
+       1   0.1%  97.5%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:232
+       1   0.1%  97.6%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:236
+       1   0.1%  97.7%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:237
+       1   0.1%  97.8%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:238
+       1   0.1%  97.9%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:241
+       1   0.1%  98.0%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:243
+       1   0.1%  98.0%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:271
+       1   0.1%  98.1%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:273
+       1   0.1%  98.2%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:274
+       1   0.1%  98.3%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:307
+       1   0.1%  98.4%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:312
+       1   0.1%  98.5%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:434
+       1   0.1%  98.6%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:878
+       1   0.1%  98.6%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:880
+       1   0.1%  98.7%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:881
+       1   0.1%  98.8%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:969
+       1   0.1%  98.9%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1056
+       1   0.1%  99.0%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1238
+       1   0.1%  99.1%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1326
+       1   0.1%  99.1%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1333
+       1   0.1%  99.2%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1415
+       1   0.1%  99.3%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1416
+       1   0.1%  99.4%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1506
+       1   0.1%  99.5%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1508
+       1   0.1%  99.6%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1597
+       1   0.1%  99.7%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1603
+       1   0.1%  99.7%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1721
+       1   0.1%  99.8%        1   0.1% ?? /usr/src/debug////////glibc-2.17-c758a686/string/../sysdeps/x86_64/multiarch/strcmp-sse42.S:1721
+       1   0.1%  99.9%        1   0.1% 0x00007ffe3ff66608
+       1   0.1% 100.0%        1   0.1% SortedList_length
+       0   0.0% 100.0%     1176 100.0% ?? /usr/src/debug////////glibc-2.17-c758a686/misc/../sysdeps/unix/sysv/linux/x86_64/clone.S:118
+       0   0.0% 100.0%        1   0.1% __GI___clock_gettime
+       0   0.0% 100.0%     1176 100.0% start_thread
+ROUTINE ====================== thread_worker in /u/cs/ugrad/luo/cs111_labs/lab2b/lab2_list.c
+   917   1176 Total samples (flat / cumulative)
+     .      .   36: void segfault_handler(){
+     .      .   37:         fprintf(stderr,"caught a segmentation fault. sync type (n means no sync): %c\n",sync_type); 
+     .      .   38:         exit(2); 
+     .      .   39: }
+     .      .   40: 
+---
+     .      .   41: void* thread_worker(void *threadNum){
+     .      .   42:     long i;
+     .      .   43:     int thread_num = *((int*)threadNum);
+     .      .   44:     long startIndex = thread_num*num_iterations;     
+     .      .   45:     struct timespec start_time, end_time; 
+     .      .   46:    for (i = startIndex; i < startIndex+num_iterations; i++){
+     .      .   47:        int list_num_hash = ((int)*pool[i].key) % num_lists; 
+     .      .   48:        clock_gettime(CLOCK_MONOTONIC, &start_time);
+     .      .   49: 	    if(sync_type=='s'){
+   486    486   50:         while (__sync_lock_test_and_set(lock+list_num_hash,1));
+     .      .   51:        }
+     .      .   52:       else if(sync_type=='m'){
+     .      .   53:         pthread_mutex_lock(&mutex_locks[list_num_hash]);
+     .      .   54: 
+     .      .   55:         }
+     .      .   56:                         clock_gettime(CLOCK_MONOTONIC, &end_time); 
+     .     96   57:                         SortedList_insert(&listheads[list_num_hash],&pool[i]); 
+     1      1   58: 	    if(sync_type=='s'){
+     .      .   59:         __sync_lock_release(lock+list_num_hash);
+     .      .   60:          }
+     .      .   61:           else if(sync_type=='m'){
+     .      .   62:         pthread_mutex_unlock(&mutex_locks[list_num_hash]);
+     .      .   63:         }
+     .      .   64:         wait_time[thread_num] += get_nanosec_from_timespec(&end_time)-get_nanosec_from_timespec(&start_time); 
+     .      .   65:     }
+     .      .   66:     int length = 0; 
+     .      .   67:     for(i = 0; i < num_lists; i++){
+     .      .   68:                 
+     .      .   69:                 clock_gettime(CLOCK_MONOTONIC, &start_time);
+     .      .   70:                 if(sync_type=='s'){
+     .      .   71:                     while (__sync_lock_test_and_set(lock+i,1));
+     .      .   72:                 }
+     .      .   73:                 else if(sync_type=='m'){
+     .      .   74:                     pthread_mutex_lock(&mutex_locks[i]);
+     .      .   75: 
+     .      .   76:                 }
+     .      .   77:                                         clock_gettime(CLOCK_MONOTONIC, &end_time); 
+     .      1   78:                                         int length_of_sublist = SortedList_length(&listheads[i]);
+     .      .   79:                                         if(length_of_sublist==-1){  
+     .      .   80:                                             fprintf(stderr,"corrupt list. sync type (n means no sync):  %c \n",sync_type); 
+     .      .   81:                                             exit(2);
+     .      .   82:                                         }
+     .      .   83:                                         length += length_of_sublist;
+     .      .   84:                 if(sync_type=='s'){
+     .      .   85:                     __sync_lock_release(lock+i);
+     .      .   86:                     }
+     .      .   87:                     else if(sync_type=='m'){
+     .      .   88:                     pthread_mutex_unlock(&mutex_locks[i]);
+     .      .   89:                     }  
+     .      .   90:                 
+     .      .   91:                 wait_time[thread_num] += get_nanosec_from_timespec(&end_time)-get_nanosec_from_timespec(&start_time); 
+     .      .   92:     }
+     .      .   93:     for (i = startIndex; i < startIndex+num_iterations; i++){
+     .      .   94:         SortedListElement_t* ret = NULL; 
+     .      .   95:         int list_num_hash = ((int)*pool[i].key) % num_lists; 
+     .      1   96:         clock_gettime(CLOCK_MONOTONIC, &start_time);
+     .      .   97:        if(sync_type=='s'){
+   430    430   98:         while (__sync_lock_test_and_set(lock+list_num_hash,1));
+     .      .   99:     }
+     .      .  100:     else if(sync_type=='m'){
+     .      .  101:         pthread_mutex_lock(&mutex_locks[list_num_hash]);
+     .      .  102: 
+     .      .  103:     }
+     .      .  104:                     clock_gettime(CLOCK_MONOTONIC, &end_time); 
+     .    161  105:                     ret = SortedList_lookup(&listheads[list_num_hash], (pool[i].key));
+     .      .  106:                         if(ret == NULL){
+     .      .  107:                             fprintf(stderr,"corrupt list, since couldnt not find the item in list. sync type (n means no sync): %c\n",sync_type); 
+     .      .  108:                             exit(2); 
+     .      .  109:                         }
+     .      .  110:                     if(SortedList_delete(ret)==1){
+     .      .  111:                         fprintf(stderr,"corrupt list, error in deleting. sync type (n means no sync): %c\n",sync_type); 
+     .      .  112:                         exit(2);
+     .      .  113:                     }
+     .      .  114:        if(sync_type=='s'){
+     .      .  115:         __sync_lock_release(lock+list_num_hash);
+     .      .  116:          }
+     .      .  117:           else if(sync_type=='m'){
+     .      .  118:         pthread_mutex_unlock(&mutex_locks[list_num_hash]);
+     .      .  119:         }
+     .      .  120:         wait_time[thread_num] += get_nanosec_from_timespec(&end_time)-get_nanosec_from_timespec(&start_time); 
+     .      .  121:     }
+     .      .  122:     return NULL; 
+     .      .  123: }
+---
+     .      .  124: 
+     .      .  125: int main(int argc, char* argv[]){
+     .      .  126:     struct option args[] = {
+     .      .  127: 		{"threads",1,NULL,'t'},  
+     .      .  128:         {"iterations",1,NULL,'i'},
+ROUTINE ====================== thread_worker in /u/cs/ugrad/luo/cs111_labs/lab2b/lab2_list.c
+   917   1176 Total samples (flat / cumulative)
+     .      .   36: void segfault_handler(){
+     .      .   37:         fprintf(stderr,"caught a segmentation fault. sync type (n means no sync): %c\n",sync_type); 
+     .      .   38:         exit(2); 
+     .      .   39: }
+     .      .   40: 
+---
+     .      .   41: void* thread_worker(void *threadNum){
+     .      .   42:     long i;
+     .      .   43:     int thread_num = *((int*)threadNum);
+     .      .   44:     long startIndex = thread_num*num_iterations;     
+     .      .   45:     struct timespec start_time, end_time; 
+     .      .   46:    for (i = startIndex; i < startIndex+num_iterations; i++){
+     .      .   47:        int list_num_hash = ((int)*pool[i].key) % num_lists; 
+     .      .   48:        clock_gettime(CLOCK_MONOTONIC, &start_time);
+     .      .   49: 	    if(sync_type=='s'){
+   486    486   50:         while (__sync_lock_test_and_set(lock+list_num_hash,1));
+     .      .   51:        }
+     .      .   52:       else if(sync_type=='m'){
+     .      .   53:         pthread_mutex_lock(&mutex_locks[list_num_hash]);
+     .      .   54: 
+     .      .   55:         }
+     .      .   56:                         clock_gettime(CLOCK_MONOTONIC, &end_time); 
+     .     96   57:                         SortedList_insert(&listheads[list_num_hash],&pool[i]); 
+     1      1   58: 	    if(sync_type=='s'){
+     .      .   59:         __sync_lock_release(lock+list_num_hash);
+     .      .   60:          }
+     .      .   61:           else if(sync_type=='m'){
+     .      .   62:         pthread_mutex_unlock(&mutex_locks[list_num_hash]);
+     .      .   63:         }
+     .      .   64:         wait_time[thread_num] += get_nanosec_from_timespec(&end_time)-get_nanosec_from_timespec(&start_time); 
+     .      .   65:     }
+     .      .   66:     int length = 0; 
+     .      .   67:     for(i = 0; i < num_lists; i++){
+     .      .   68:                 
+     .      .   69:                 clock_gettime(CLOCK_MONOTONIC, &start_time);
+     .      .   70:                 if(sync_type=='s'){
+     .      .   71:                     while (__sync_lock_test_and_set(lock+i,1));
+     .      .   72:                 }
+     .      .   73:                 else if(sync_type=='m'){
+     .      .   74:                     pthread_mutex_lock(&mutex_locks[i]);
+     .      .   75: 
+     .      .   76:                 }
+     .      .   77:                                         clock_gettime(CLOCK_MONOTONIC, &end_time); 
+     .      1   78:                                         int length_of_sublist = SortedList_length(&listheads[i]);
+     .      .   79:                                         if(length_of_sublist==-1){  
+     .      .   80:                                             fprintf(stderr,"corrupt list. sync type (n means no sync):  %c \n",sync_type); 
+     .      .   81:                                             exit(2);
+     .      .   82:                                         }
+     .      .   83:                                         length += length_of_sublist;
+     .      .   84:                 if(sync_type=='s'){
+     .      .   85:                     __sync_lock_release(lock+i);
+     .      .   86:                     }
+     .      .   87:                     else if(sync_type=='m'){
+     .      .   88:                     pthread_mutex_unlock(&mutex_locks[i]);
+     .      .   89:                     }  
+     .      .   90:                 
+     .      .   91:                 wait_time[thread_num] += get_nanosec_from_timespec(&end_time)-get_nanosec_from_timespec(&start_time); 
+     .      .   92:     }
+     .      .   93:     for (i = startIndex; i < startIndex+num_iterations; i++){
+     .      .   94:         SortedListElement_t* ret = NULL; 
+     .      .   95:         int list_num_hash = ((int)*pool[i].key) % num_lists; 
+     .      1   96:         clock_gettime(CLOCK_MONOTONIC, &start_time);
+     .      .   97:        if(sync_type=='s'){
+   430    430   98:         while (__sync_lock_test_and_set(lock+list_num_hash,1));
+     .      .   99:     }
+     .      .  100:     else if(sync_type=='m'){
+     .      .  101:         pthread_mutex_lock(&mutex_locks[list_num_hash]);
+     .      .  102: 
+     .      .  103:     }
+     .      .  104:                     clock_gettime(CLOCK_MONOTONIC, &end_time); 
+     .    161  105:                     ret = SortedList_lookup(&listheads[list_num_hash], (pool[i].key));
+     .      .  106:                         if(ret == NULL){
+     .      .  107:                             fprintf(stderr,"corrupt list, since couldnt not find the item in list. sync type (n means no sync): %c\n",sync_type); 
+     .      .  108:                             exit(2); 
+     .      .  109:                         }
+     .      .  110:                     if(SortedList_delete(ret)==1){
+     .      .  111:                         fprintf(stderr,"corrupt list, error in deleting. sync type (n means no sync): %c\n",sync_type); 
+     .      .  112:                         exit(2);
+     .      .  113:                     }
+     .      .  114:        if(sync_type=='s'){
+     .      .  115:         __sync_lock_release(lock+list_num_hash);
+     .      .  116:          }
+     .      .  117:           else if(sync_type=='m'){
+     .      .  118:         pthread_mutex_unlock(&mutex_locks[list_num_hash]);
+     .      .  119:         }
+     .      .  120:         wait_time[thread_num] += get_nanosec_from_timespec(&end_time)-get_nanosec_from_timespec(&start_time); 
+     .      .  121:     }
+     .      .  122:     return NULL; 
+     .      .  123: }
+---
+     .      .  124: 
+     .      .  125: int main(int argc, char* argv[]){
+     .      .  126:     struct option args[] = {
+     .      .  127: 		{"threads",1,NULL,'t'},  
+     .      .  128:         {"iterations",1,NULL,'i'},

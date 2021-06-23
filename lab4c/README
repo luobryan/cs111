@@ -1,0 +1,15 @@
+NAME: Bryan Luo
+EMAIL: luobryan@ucla.edu
+ID: 605303956
+
+Description of Files:
+README is this file
+
+Makefile is used to make the file. The 'default' target builds both versions
+of the program (lab4c_tcp and lab4c_tls). The 'clean' target removes all
+programs and output created by the Makefile, restoring the 
+directory to its freshly untarred state. 
+
+lab4c_tcp.c is the source file for the TCP version of the sensor program. 
+
+lab4c_tls.c is the source file for the TLS version of the sensor program. 

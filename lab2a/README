@@ -1,0 +1,95 @@
+NAME: Bryan Luo
+EMAIL: luobryan@ucla.edu
+ID: 605303956
+
+Files in this submission:
+lab2_add.c is the C source file that implements and tests a shared variable add function
+SortedList.h is the provided header file describing the interfaces for linked list operations
+SortedList.c is a C source file that  implements insert, delete, lookup, and length methods for a sorted doubly linked list 
+lab2_list.c is the C source file that tests race conditions and synchronization on a doubly circular sorted linked list
+Makefile is used to build the project
+lab2_add.csv is the results of all "Part 1" project tests
+lab2_list.csv is the results of all "Part 2" project tests
+.png files (9 in total) are graphs based on the description in the spec
+README is this file
+
+my_tests.sh is a script file, used by the Makefile, to run a series of test scripts on the lab2_add program and lab2_list program
+.gp files (2 in total) 
+
+
+Questions
+
+2.1.1
+When there are more iterations, it's more likely for the threads to become entalged and step on each other, thus causing errors in our program. 
+By the basic laws of statistics, the more iterations we have, the more likely we are to see at least 1 error. If there are just a few iterations,
+it's less likely for an error to occur because each thread can finish its job before the next thread starts. 
+
+A significantally smaller number of iterations seldom fails because, as mentioned earlier, each thread can perform work after the previous one
+finishes. If there are a lot of iterations, then they will inevitably have to have overlapping execution times, causing them to access
+a shared resource simultaneously, causing errors. 
+
+2.1.2
+The --yield runs are so much slower because everytime the add function is performed, the thread relinquishes the CPU. This causes the thread to be moved to the
+end of the queue for its static priority, and a new thread will get to run. This context switch takes a bit of time because it involves saving the
+state/context (so it can be restored later). That's why it takes extra time. 
+
+As mentioned before, this additional time is going to everything needed to perform the context switch (i.e. saving and restoring the state)
+
+It would be challenging to get valid per-operation timings if we are using the --yield option because it is
+hard to measure just how long the context switches (mentioned earlier) will take. 
+
+2.1.3
+Our recorded time includes the time it takes to create and join the threads. Creating and joining threads is quite costly 
+in terms of time. When we add iterations, no additional threads need to be created, yet more operations
+are being done. Iterations are quite quick and have minimal time cost. Thus, when we increase iterations,
+we're essentially increasing the number of operations without increasing the time it takes (again, since
+we aren't creating new threads). 
+
+The cost per operation should approach some very small number (close to 0)  as the number of iterations increases, because we're increasing
+the number of operations without increasing time (since we aren't creating additional threads). Whatever this small number is, that our
+cost per operation approaches, is going to be our "correct" cost. 
+
+2.1.4
+When there are less threads, it's less likely that two threads go into the same critical section at the same time (for similar reasons 
+mentioned in 2.1.1), so the effect of the different options (types of locks) are going to be similar. Once we have 
+more threads, there is a higher probability that two threads go into same critical section at the same time, which will magnify
+the differences between the different locking mechanisms. 
+
+As the number of threads rise, it's more likely for two threads to be competing for a critical section at the same time,
+so it's more likely for threads to be requried to wait for locks to be released, which will slow down the operations. 
+
+
+2.2.1
+Based on my graphs, it appears the time	per mutex-protected operation vs. number of threads had	more variation in the Part-2 (Sorted lists) case 
+than Part-1 (adds). 
+
+In terms of shape, both curves were positive. This means that as we increase the # of threads, the cost per 
+mutex-protected operation goes up. This is because as we increase the number of threads, more time is spent waiting for locks to be released,
+leading to a higher time cost per operation. 
+
+The part-2 curve had a steeper slope (i.e. higher rate of increase), meaning that the time/cost increased BY MORE as we increased the number of threads.
+The main reason the Part-2 curve has a higher rate of increase, is because the list operations have a higher time cost than add operations. They're more complicated
+and thus take more time. Because of this, the threads spend more time waiting for locks (since the list operations
+are protected by locks). When we add more threads, the difference in wait time for list operations compared to add operations becomes magnified. 
+
+THE SPEC ONLY ASKED ABOUT RATE OF INCREASE, BUT HERE'S A NOTE ABOUT THE RATE OF RATE OF INCREASE:
+Both curves have a rate of increase that is decreasing. However, Part 1 curve's rate of increase is decreasing at a quicker rate.
+In other words, the part-1 curve is "flattening" out more as we increase the number of threads,
+while the Part-2 curve appears to be linearly increasing (although slightly flattening out). The explanation for this is similar to the previous 
+paragraph about rate of increase. 
+
+
+2.2.2
+For part 2, it looks like the variations between the two curves (Mutex vs. spin lock) are approximately the same. 
+Both curves are positive sloped, which makes sense, because increasing thread count would increase the time spent
+waiting for locks to be released, which increases the time cost.
+
+While the slopes are similar, it looks like the spin lock has a slightly higher slope (i.e., higher rate
+of increase). The spin lock starts at a lower cost per operation, but since it has a higher slope, at a certain point, it ends up having a cost 
+per operation higher than the mutex lock. This is likely because spin locks have the thread wait until the lock is
+released (which wastes CPU cycles). When there aren't many threads, this can be slightly more efficient.
+However, when there are many threads, this ends up wasting a lot of time resources (CPU cycles), explaining why
+the spin lock curve has a higher slope (and thus higher cost per operation when there are many threads). 
+
+
+

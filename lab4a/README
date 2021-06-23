@@ -1,0 +1,21 @@
+NAME: Bryan Luo
+EMAIL: luobryan@ucla.edu
+ID: 605303956
+
+Serial Number: 
+MAC Address: 2cf7f106c5fc
+
+Description of files:
+my_beaglebone.jpg is a selfie of me holding my assembled Beaglebone
+
+connected.png shows that I have given the Beaglebone a name (605303956.lasr.cs.ucla.edu) using the 'hostname' command. It also shows the MAC addresses (with the 'services' command and ConnMan). It also shows me run 'ifconfig' to show the IP addresses. 
+
+copy.png shows a local session in which I copied my trivial hello world program from my laptop to my Beaglebone
+
+build_run.png shows me use a WIFI SSH session in which I built and ran the trivial hello world program. 
+
+git.png shows me use a WIFI SSH session to install git and clone a repository. Even though this screenshot doesn't specifically show me logging in via WIFI SSH, the session used in git.png is the same as WIFI SSH session from build_run.png. 
+
+Makefile is used to build the tarball (with the 'dist' target), and to remove all files created by the Makefile (with the 'clean' target). 
+
+README is this file. 

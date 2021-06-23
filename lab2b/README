@@ -1,0 +1,71 @@
+NAME: Bryan Luo
+EMAIL: luobryan@ucla.edu
+ID: 605303956
+
+Files in this submission:
+ 
+SortedList.h - header file with interfaced for linked list operations
+SortedList.c - source file for linked list
+lab2_list.c - source file for the list program
+Makefile -  to make the program
+lab2_list.csv - is the data for results of test runs
+profile.out - is the profiling data
+*.png - are the graphs
+README - is this file
+my_tests.sh - is the test cases used by the Makefile (i.e. with 'make tests')
+lab2-list.gp - is the graphing script to generate the *.png graphs 
+
+
+
+
+2.3.1
+I believe move of the cycles are spent performing operations on the list, instead of waiting for locks, in the 1 and 2-thread list tests. 
+This is because there aren't too many threads, so it's less likely that 2 threads will try to access the same critical section at the same time. 
+I think these are the most expensive parts of the code because list operations in general tend to be very costly since they involve large amount of data in memory.
+Note that if there are 2 threads with spin locks, it might actually spend more time waiting for locks, because when one thread is in the critical section, the other thread keeps "spinning' while waiting for the lock to be released. 
+This costs cycles. 
+
+In high-thread spin-lock tests, I believe most of the time/cycles are being spent waiting for locks. 
+Because as mentioned, when one thread is waiting for a lock to be released, it keeps spinning, which costs cycles/time. 
+
+In high-thread mutex tests, the threads aren't spinning while waiting. 
+So more time will be spent on list operations and also system calls since threads will need to go into a "waiting" state if the lock doesn't not unlock after a bit (rather than waiting and continuously spinning and costing CPU cycles). 
+
+
+2.3.2
+This line of code is consuming most of the cycles when the spin-lock version of the list exerciser is run with a large number of threads: 
+	while (__sync_lock_test_and_set(&lock,1));
+
+Note that this same line (or something similar) occurs multiple times in my code. 
+
+This operation becomes expensive with a large number of threads because it is associated with a spin-locks. 
+With spin-locks, each thread continuously spins while waiting for a lock (to a critical section) to be released. 
+If there are a larger number of threads, then it's more likely that multiple threads try to access the same critical section at the same time, causing threads to have to wait even longer for the lock to be released. 
+This spin lock is in contrast with Mutex locks, which go into a "waiting" state after the lock isn't released for a while. 
+
+
+2.3.3
+The average lock-wait time rises with the number of contending threads because when there are more threads, it is more likely that multiple threads are trying to access the same critical section. 
+This, in turn, causes a higher lock wait time, since there are more threads, and each thread has to spend longer waiting for a lock to be released to access a critical section. 
+Put simply, there's more competition between threads to access a critical section, causing wait times to increase. 
+
+Completion time per operation rises (less dramatically) with the number of contending threads because completion time is the time it takes for the ENTIRE program to run. 
+Technically, whether there is 1 thread or multiple threads, there will always be 1 thread working on the code in critical sections. 
+So when we increase the number of threads, the completion time per operation doesn't change (or increase) that much. 
+It still increases a little, because there is overhead to creating more threads, dealing with locks, dealing with context switching, etc. 
+
+Wait time per operation goes up faster (or higher) than the completion time per operation, because as mentioned, wait time per operation adds up all the wait times that every thread experiences. 
+Completion time just looks at the total time it takes. 
+There is definitely some overlap between wait times that individual threads experience, so the overall TOTAL completion time is less than the SUM of all wait times. 
+
+2.3.4
+When we increase the number of lists, the performance of synchronized methods improves. 
+And the reason for this is because there is less competition between the locks, since each list has its own lock. 
+Now that different threads can work on different lists, there will be less time spent waiting for the locks, which thus increases performance. 
+
+If we increase the number of lists, the throughput should increase for a while. 
+However, there will be a certain point (e.g. when each element has its own sublist, or perhaps even earlier) when the overhead associated with creating all the lists becomes not worth it, and throughput actually decreases. 
+
+Based on the curves, it does seem to be true that the throughput of an N-way partitioned list should be equivalent to the throughput of a single list with fewer (1/N) threads. 
+However, creating sublists involves quite a bit of overhead--not only to create but also to do basic list operations on (like insert elements, find the length, etc.). 
+There's also some variation associated with the N-way partitioned list, since based on how our hash function works, each can be assigned to a different sublist, which ultimately affects performance and contention for locks.

@@ -1,0 +1,28 @@
+NAME: Bryan Luo
+EMAIL: luobryan@ucla.edu
+ID: 605303956
+
+Description of files:
+lab0.c is the C source file
+Makefile is used to build the program and the tarball
+backtrace.png shows a segfault and associated stack-trace in gdb
+breakpoint.png shows a breakpoint and variable inspection, showing the pointer is indeed NULL 
+README is this file
+
+Description of smoke-test cases in the check target of Makefile:
+First I test and make sure the program exits with return code of 0 when there are no errors. 
+Then I run the program on two existing files, using the --input and --output options.
+I make sure both files end with the same contents.
+Then I run the programs on two exisitng files, passing them in as stdin (0<) and stdout (1>).
+I make sure both files end with the same contents. 
+Then I run the program with an unrecognized argument, and make sure it exits with return code 1.
+Then I run the program with a nonexisting file (for --input option), and make sure it exits with return code 2.
+Then I run the program with a file I don't have permission to write to (for --output option), and make sure it exits with return code 3. 
+Then I run the program with the --segfault and --catch options and make sure it exits with return code 4. 
+
+More info: 
+The smoke-check was just a brief check. I manually tested some other scenarios that were less common such as:
+- when having multiple --input options, making sure only the last one is taken into account
+- when there is a --segfault and invalid --input source, the --input error takes precedence 
+- when there is an --input error and invalid option, the invalid option takes precedence 
+- when there are multiple invalid options, only the first one is reported
